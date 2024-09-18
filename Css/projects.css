@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+body{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  background-image: url(../Media/de5de77dc5ba77799c73ba1fd9909ce3-transformed.jpeg);
+  backdrop-filter: blur(px);
+  background-size: cover;
+  background-position: 100%;
+  height: 200vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.header{
+    background: transparent;
+    backdrop-filter:blur(15px) ;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+.header a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.header h4{
+    color: rgb(255, 255, 255);
+    margin:15px 0 0 150px;
+    font-size: 23px;
+    font-weight: bolder;
+    text-decoration: none;   
+}
+.header .navopt{
+    display: flex;
+    margin:20px 200px 0 0;
+}
+.header .navopt a{
+    position: relative;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    color:rgb(255, 127, 127) ;
+}
+.header .navopt a:hover{
+    color: white;
+}
+.header .navopt a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 12px;
+    left: 0;
+    width: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.5s;
+}
+.header .navopt a:hover::before{
+    width: 100%;
+}
+.projects h2{
+    color:white;
+    position: absolute;
+    left: 47%;
+    top: 100px;
+}
+.projects .dev{
+    margin-top: 130px;
+}
+.projects .dev h4{
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 15%;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-bottom: 4px solid white;
+    padding: 5px;
+}
+/*dev styling starts*/
+.dev-images{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0 120px;
+}
+.dev-images div{
+    margin: 20px 50px;
+}
+.dev-images div:hover{
+    transition: 1s;
+}
+/*img1 div*/
+.dev-images .img1 img{
+    height: 250px;
+    position: absolute;
+    border-radius: 20px 20px  0 0;
+}
+.dev-images .img1{
+    border: 2px white solid;
+    height: 350px;width: 545px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 20px;
+}
+/*img2 div*/
+.dev-images .img2 img{
+    height: 250px;
+    position: absolute;
+    border-radius: 20px 20px 0 0;
+}
+.dev-images .img2{
+    border: 2px white solid;
+    height: 350px;width: 515px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 20px;
+}
+/*img3 div*/
+.dev-images .img3 img{
+    height: 268px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+.dev-images .img3{
+    border: 2px white solid;
+    height: 380px;width: 545px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 20px;
+
+}
+/*img4 div*/
+.dev-images .img4 img{
+    height: 265px;
+    border-radius: 20px 20px 0 0;
+}
+.dev-images .img4{
+    border: 2px white solid;
+    height: 380px;width: 518px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 20px;
+}
+.dev-images .img1 .tech-btn{
+    position: absolute;
+    margin: 300px 0 0 40px;
+}
+.dev-images .img1 .tech-btn button{
+    margin-left:20px ;
+    padding: 8px 18px;
+    border-style:none ;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.dev-images .img1 p{
+    position: absolute;
+    color: white;
+    margin: 260px 0 0 120px;
+    font-size: 18px;
+}
+.dev-images .img1 .pre-btn1{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.dev-images .img1 .pre-btn1:hover{
+    background-color: white;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 127, 127);
+}
+.dev-images .img1:hover{
+    margin-top: 10px;
+    box-shadow: 0 0  40px black;
+}
+/*----------------------------------------*/
+.dev-images .img2 .tech-btn{
+    position: absolute;
+    margin: 300px 0 0 40px;
+}
+.dev-images .img2 .tech-btn button{
+    margin-left:20px ;
+    padding: 8px 18px;
+    border-style:none ;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.dev-images .img2 p{
+    position: absolute;
+    color: white;
+    margin: 260px 0 0 110px;
+    font-size: 18px;
+}
+.dev-images .img2 .pre-btn1{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.dev-images .img2 .pre-btn1:hover{
+    background-color: white;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 127, 127);
+}
+.dev-images .img2:hover{
+    margin-top: 10px;
+    box-shadow: 0 0  40px black;
+}
+/*-----------------------------------------------*/
+.dev-images .img3 .tech-btn{
+    position: absolute;
+    margin: 55px 0 0 40px;
+}
+.dev-images .img3 .tech-btn button{
+    margin-left:20px;
+    padding: 8px 18px;
+    border-style:none ;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.dev-images .img3 p{
+    position: absolute;
+    color: white;
+    margin: 5px 0 0 120px;
+    font-size: 18px;
+}
+.dev-images .img3 .pre-btn1{
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.dev-images .img3 .pre-btn1:hover{
+    background-color: white;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 127, 127);
+}
+.dev-images .img3:hover{
+    margin-top: 10px;
+    box-shadow: 0 0  40px black;
+}
+/*-----------------------------------*/
+.dev-images .img4 .tech-btn{
+    position: absolute;
+    margin: 55px 0 0 40px;
+}
+.dev-images .img4 .tech-btn button{
+    margin-left:20px;
+    padding: 8px 18px;
+    border-style:none ;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.dev-images .img4 p{
+    position: absolute;
+    color: white;
+    margin: 5px 0 0 120px;
+    font-size: 18px;
+}
+.dev-images .img4 .pre-btn1{
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.dev-images .img4 .pre-btn1:hover{
+    background-color: white;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 127, 127);
+}
+.dev-images .img4:hover{
+    margin-top: 10px;
+    box-shadow: 0 0  40px black;
+}
+/*dev styling ends*/
+/*des styling starts*/
+.projects .des{
+    margin-top: 100px;
+}
+.des-images{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0 120px;
+}
+.des-images div{
+    margin: 20px 50px;
+}
+.des-images div:hover{
+    transition: 1s;
+}
+/*-------------------------------------*/
+.des-images .img1 img{
+    height: 234px;
+    position: absolute;
+    border-radius: 20px 20px  0 0;
+}
+.des-images .img1{
+    border: 2px white solid;
+    height: 350px;width: 545px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 20px;
+}
+/*-------------------------------------*/
+.des-images .img2 img{
+    height: 250px; width: 545px;
+    position: absolute;
+    border-radius: 20px 20px  0 0;
+}
+.des-images .img2{
+    border: 2px white solid;
+    height: 350px;width: 545px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    border-radius: 20px;
+}
+/*--------------------------------------*/
+.des-images .img1 .tech-btn{
+    position: absolute;
+    margin: 300px 0 0 40px;
+}
+.des-images .img1 .tech-btn button{
+    margin-left:100px ;
+    padding: 8px 18px;
+    border-style:none ;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.des-images .img1 p{
+    position: absolute;
+    color: white;
+    margin: 250px 0 0 220px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.des-images .img1 .pre-btn1{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.des-images .img1 .pre-btn1:hover{
+    background-color: white;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 127, 127);
+}
+.des-images .img1:hover{
+    margin-top: 10px;
+    box-shadow: 0 0  40px black;
+}
+/*----------------------------------------*/
+.des-images .img2 .tech-btn{
+    position: absolute;
+    margin: 300px 0 0 40px;
+}
+.des-images .img2 .tech-btn button{
+    margin-left:100px ;
+    padding: 8px 18px;
+    border-style:none ;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.des-images .img2 p{
+    position: absolute;
+    color: white;
+    margin: 260px 0 0 180px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.des-images .img2 .pre-btn1{
+    position: absolute;
+    top: 300px;
+    left: 320px;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.des-images .img2 .pre-btn1:hover{
+    background-color: white;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 127, 127);
+}
+.des-images .img2:hover{
+    margin-top: 10px;
+    box-shadow: 0 0  40px black;
+}
+.projects .des h4{
+    color: white;
+    position: absolute;
+    top: 135%;
+    left: 15%;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-bottom: 4px solid white;
+    padding: 5px;
+}
+

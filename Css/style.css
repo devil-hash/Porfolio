@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+body{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  background-image: url(../Media/vecteezy_ai-generated-generated-image-of-abstract-red-and-white_39365698.jpg);
+  background-size: cover;
+  background-position: 100%;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.header{
+    background: transparent;
+    backdrop-filter:blur(15px) ;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.header h4{
+    color: rgb(255, 255, 255);
+    margin:15px 0 0 150px;
+    font-size: 23px;
+    font-weight: bolder;
+    text-decoration: none;   
+}
+.header .navopt{
+    display: flex;
+    margin:20px 200px 0 0;
+}
+.header .navopt a{
+    position: relative;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    color:rgb(255, 63, 63) ;
+}
+.header .navopt a:hover{
+    color: white;
+}
+.header .navopt a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 12px;
+    left: 0;
+    width: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.5s;
+}
+.header .navopt a:hover::before{
+    width: 100%;
+}
+
+.carddetails{
+    padding: 30px 0 30px 0px;
+    height: 270px;
+    width: 730px;
+    margin: 150px 0 0 100px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 20px 15px 50px;
+}
+.carddetails .text-container{
+    display: inline-block;
+    width: 450px;
+}
+.carddetails .text{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px solid white;
+    font-weight: bolder;
+    font-size: 33px;
+    margin-left: 80px;
+    color: white;
+    animation: typing 5s steps(50) infinite; 
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+#para p{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 60px;
+}
+#pro{
+    color: rgba(209, 56, 255, 0.861);
+    letter-spacing: 2px;
+}
+#dev{
+    color: rgb(61, 208, 149);
+    letter-spacing: 2px;
+}
+#des{
+    color:rgb(83, 195, 240);
+    letter-spacing: 2px;
+}
+#para{
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+}
+.carddetails button{
+    padding: 8px 30px;
+    border-radius: 30px;
+    margin:10px 0 0 80px;
+    background: transparent;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    border-style: none;
+    transition: 0.5s;
+    font-weight: bolder;
+    border: 2px solid white;
+}
+#btn2{
+    position: absolute;
+    left: 180px;
+}
+.carddetails button:hover{
+    font-weight: bolder;
+    background-color: white;
+    color: rgba(255, 0, 0, 0.626);
+}
+.icons{
+    position: absolute;
+    top: 290px;
+    left: 78%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0 0 150px;
+}
+.icons i{
+    color: white;
+    margin:20px 0 0 40px;
+    font-size: 17px;
+    transition: 0.2s; 
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.icons i:hover{
+    background-color: white;
+    color: rgba(255, 0, 0, 0.626);
+}
+.image{
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    width:380px ; height:380px;
+    transition: 0.5s;
+}
+.image img{
+    height: 300px;
+    margin: 60px 0 0 40px;
+    border-radius: 30px 0 30px 0;
+    transition: 0.5s ease-in-out;
+    border: 5px white solid;
+}
+.image img:hover{
+    height: 320px;
+    box-shadow: 10px 10px 10px;
+}
+#about img{
+    background-size:cover ;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+
+
+

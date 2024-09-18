@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  background-image: url(../Media/contact-bg.jpg);
+  background-size: cover;
+  background-position: 100%;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.header{
+    background: transparent;
+    backdrop-filter:blur(15px) ;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.header h4{
+    color: rgb(255, 255, 255);
+    margin:15px 0 0 150px;
+    font-size: 23px;
+    font-weight: bolder;
+    text-decoration: none;   
+}
+.header .navopt{
+    display: flex;
+    margin:20px 200px 0 0;
+}
+.header .navopt a{
+    position: relative;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    color:rgb(255, 63, 63) ;
+}
+.header .navopt a:hover{
+    color: white;
+}
+.header .navopt a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 12px;
+    left: 0;
+    width: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.5s;
+}
+.header .navopt a:hover::before{
+    width: 100%;
+}
+h2{
+    font-size: 20px;
+    letter-spacing: normal;
+    margin: 20px 0 0 680px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 130px;
+    padding-left: 25px;
+    color:rgb(255, 127, 127);
+    box-shadow:0 0 30px rgb(255, 255, 255);
+}
+.contact-form{
+    margin:30px 0 0 250px;
+    position: relative;
+    height: 550px; width: 1000px;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 30px black;
+}
+.contact-form .details{
+    position: absolute;
+    margin:100px 0 0 100px;
+
+}
+.contact-form .details h4{
+    position: absolute;
+    bottom: 330px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px white;
+    margin-left: 80px;
+    font-size: 20px;
+    color:rgb(255, 127, 127); 
+    background-color:white; 
+    padding: 5px 15px;
+}
+.contact-form .details div{
+    margin-top: 50px;
+    color: white;
+    letter-spacing: 1px;
+    line-height:25px ;
+}
+.contact-form .details div p{
+    margin-left: 25px;
+}
+.contact-form .form{
+    background-color: white;
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    left: 500px;
+    border-radius: 0 20px 20px 0;
+}
+.contact-form .form h4{
+    font-size: 18px;
+    background-color:rgb(255, 127, 127) ;
+    color: white;
+    box-shadow: 0 0 30px rgb(255, 127, 127);
+    padding: 10px 20px;
+    position: absolute;
+    padding: 5px 15px;
+    border-radius: 30px;
+    top:20px;
+    left: 180px;
+}
+form{
+    position: absolute;
+    top: 75px;
+    left: 100px;
+}
+form input{
+    width: 350px; height: 30px;
+    border-style: none;
+    border-bottom: 3px solid rgb(255, 127, 127);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+form #message-box{
+    position: absolute;
+    top: 300px;
+}
+form textarea{
+    width: 325px;
+    height: 50px;
+    border-style:none ;
+    border: 2px solid rgb(248, 96, 96);
+    padding:10px 0 0 20px;
+}
+form button{
+    margin-top: 20px;
+    width: 130px;
+    border-style:none;
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:white;
+    background-color: rgb(248, 96, 96);
+    transition: 0.5s;
+
+}
+form button:hover{
+    box-shadow: 0 0 30px rgb(248, 96, 96);
+}
